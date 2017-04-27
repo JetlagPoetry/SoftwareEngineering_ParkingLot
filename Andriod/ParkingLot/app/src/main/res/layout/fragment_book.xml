@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context="com.nku.cs.parkinglot.MainActivity">
+
+    <Button
+        android:id="@+id/btn_BookOnce"
+        android:layout_width="180dp"
+        android:layout_height="60dp"
+        android:text="一次预约"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="90dp"
+        tools:layout_editor_absoluteY="135dp" />
+
+    <Button
+        android:id="@+id/btn_BookLongterm"
+        android:layout_width="180dp"
+        android:layout_height="60dp"
+        android:text="长期租用"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="90dp"
+        tools:layout_editor_absoluteY="258dp" />
+</android.support.constraint.ConstraintLayout>
