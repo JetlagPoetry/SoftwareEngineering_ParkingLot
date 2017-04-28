@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.nku.cs.parkinglot.BookLongtermParkActivity"
+    tools:layout_editor_absoluteY="81dp"
+    tools:layout_editor_absoluteX="0dp">
+
+    <Button
+        android:id="@+id/btn_BookLongtermStartTime"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:layout_marginRight="12dp"
+        android:text="开始时间"
+        android:textSize="18sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/txv_BookLongtermStartTime"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <TextView
+        android:id="@+id/txv_BookLongtermEndTime"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="12dp"
+        android:gravity="center"
+        android:text="点击右侧选择结束时间"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/edt_BookLongtermDayNumber"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/btn_BookLongtermEndTime"
+        app:layout_constraintTop_toBottomOf="@+id/txv_BookLongtermStartTime" />
+
+    <Button
+        android:id="@+id/btn_BookLongtermEndTime"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:layout_marginRight="12dp"
+        android:text="结束时间"
+        android:textSize="18sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/txv_BookLongtermEndTime"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <TextView
+        android:id="@+id/txv_BookLongtermStartTime"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="19dp"
+        android:gravity="center"
+        android:text="点击右侧选择开始时间"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/btn_BookLongtermStartTime"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <TextView
+        android:id="@+id/txv_BookLongtermParkingLot"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="12dp"
+        android:gravity="center"
+        android:text="点击右侧选择停车场"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/txv_BookLongtermUnoccupiedFeedback"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/btn_BookLongtermParkingLot"
+        app:layout_constraintTop_toBottomOf="@+id/edt_BookLongtermDayNumber"
+        app:layout_constraintVertical_bias="0.491" />
+
+    <Button
+        android:id="@+id/btn_BookLongtermParkingLot"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:layout_marginRight="16dp"
+        android:text="停车场"
+        android:textSize="18sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/txv_BookLongtermParkingLot"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <TextView
+        android:id="@+id/txv_BookLongtermUnoccupiedFeedback"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:gravity="center"
+        android:text="当前空余反馈"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_BookLongtermNextStep"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <Button
+        android:id="@+id/btn_BookLongtermNextStep"
+        android:layout_width="200dp"
+        android:layout_height="48dp"
+        android:background="#81d8d0"
+        android:text="下一步"
+        android:textSize="18sp"
+        android:layout_marginLeft="12dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginRight="12dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="12dp" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="200dp"
+        android:layout_height="36dp"
+        android:gravity="center"
+        android:text="长期租用-车位信息"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="12dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginRight="12dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginBottom="12dp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_BookLongtermStartTime" />
+
+    <EditText
+        android:id="@+id/edt_BookLongtermDayNumber"
+        android:layout_width="180dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="请输入租用天数"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/btn_BookLongtermParkingLot"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_BookLongtermEndTime" />
+
+</android.support.constraint.ConstraintLayout>
